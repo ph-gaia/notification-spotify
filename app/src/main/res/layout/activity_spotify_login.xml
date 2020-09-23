@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:gravity="center|top">
+
+    <ImageView
+        android:id="@+id/spotify_logo"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:padding="40dp"
+        android:src="@drawable/main_logo_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/txtWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="@string/welcome"
+        android:textColor="#ffffff"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/spotify_logo" />
+
+    <TextView
+        android:id="@+id/txtWelcomeInst"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:text="@string/welcome_text"
+        android:textColor="@color/colorLoginPressed"
+        android:textSize="13sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcome" />
+
+    <Button
+        android:id="@+id/btnCreateAccount"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/create_account_button"
+        android:text="@string/create_account"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtWelcomeInst"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcomeInst"
+        app:layout_constraintTop_toBottomOf="@+id/txtWelcomeInst" />
+
+    <TextView
+        android:id="@+id/txtAlreadyUser"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="@string/already_user"
+        android:textColor="#ffffff"
+        android:textSize="12sp"
+        app:layout_constraintTop_toBottomOf="@+id/btnCreateAccount"/>
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_rect"
+        android:backgroundTint="#ffffff"
+        android:text="@string/login_button"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/txtWelcomeInst"
+        app:layout_constraintStart_toStartOf="@+id/txtWelcomeInst"
+        app:layout_constraintTop_toBottomOf="@+id/txtAlreadyUser"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

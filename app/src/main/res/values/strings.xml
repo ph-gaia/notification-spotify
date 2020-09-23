@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Notification Spotify</string>
+    <string name="autor_name">Paulo Henrique</string>
+    <string name="create_account">Criar Conta</string>
+    <string name="already_user">Já é um usuário?</string>
+    <string name="login_button">Entrar</string>
+
+    <string name="welcome">Bem vindo</string>
+    <string name="welcome_text">Inscreva-se para obter músicas gratuitas em seu telefone, tablet e computador.</string>
+</resources>
